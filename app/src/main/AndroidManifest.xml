@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.jundat95.tinhngo.sharelocation">
+
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the 'MyLocation' functionality. 
+    -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+
+    <application
+        android:name=".ShareLocationApp"
+        android:allowBackup="true"
+        android:icon="@drawable/compass"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <!-- Facebook SDK -->
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <activity
+            android:name=".view.temp.Login1Activity"
+            android:label="@string/title_activity_maps">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".view.activity.MainActivity"
+            android:label="@string/title_activity_maps"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".view.temp.Signup1Activity"
+            android:theme="@style/AppTheme.Blue" />
+        <activity android:name=".view.activity.DemoActivity" />
+        <activity
+            android:name=".view.activity.PostSubjectActivity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".view.activity.UpdateUserAfterLoginActivity"
+            android:theme="@style/AppTheme.Blue" />
+        <activity
+            android:name=".view.activity.SubjectPostedListActivity"
+            />
+        <activity
+            android:name=".view.activity.UpdatePostSubjectActivity"
+            android:theme="@style/AppTheme.Blue"
+            />
+    </application>
+
+</manifest>

@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="fill_parent"
+    android:layout_width="fill_parent"
+    android:fitsSystemWindows="true"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Update Product"
+            android:layout_gravity="center"
+            android:textSize="20dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/accent"
+            />
+        <!--Subject Name-->
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            >
+            <EditText
+                android:id="@+id/subject_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/subject_name"
+                />
+        </android.support.design.widget.TextInputLayout>
+        <!--Subject Description-->
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            >
+            <EditText
+                android:id="@+id/subject_description"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:hint="@string/subject_description"
+                />
+        </android.support.design.widget.TextInputLayout>
+        <!--Product-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Item Type"
+                android:textSize="17dp"
+                />
+            <Spinner
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/spinner_product"
+                />
+        </LinearLayout>
+        <!--Price-->
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            >
+            <EditText
+                android:id="@+id/price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/price"
+                android:inputType="number"
+                />
+        </android.support.design.widget.TextInputLayout>
+        <!--Phone Number-->
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            >
+            <EditText
+                android:id="@+id/phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/phone_number"
+                android:inputType="number"
+                />
+        </android.support.design.widget.TextInputLayout>
+        <!--Facebook Contact-->
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            >
+            <EditText
+                android:id="@+id/facebook_contact"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/facebook"
+                />
+        </android.support.design.widget.TextInputLayout>
+        <!--Select Time -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:weightSum="1"
+            >
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.9"
+                >
+                <EditText
+                    android:id="@+id/end_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter Time End"
+                    android:inputType="datetime"
+                    />
+            </android.support.design.widget.TextInputLayout>
+            <Button
+                android:id="@+id/btn_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Click"
+                android:layout_weight="0.1"
+                />
+        </LinearLayout>
+        <!--Select Date -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:weightSum="1"
+            >
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.9"
+                >
+                <EditText
+                    android:id="@+id/end_date"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter Date End"
+                    android:inputType="datetime"
+                    />
+            </android.support.design.widget.TextInputLayout>
+            <Button
+                android:id="@+id/btn_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Click"
+                android:layout_weight="0.1"
+                />
+        </LinearLayout>
+
+        <android.support.v7.widget.AppCompatButton
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="20dp"
+            android:id="@+id/update_subject"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Update Subject"
+            android:layout_gravity="center"
+            />
+
+    </LinearLayout>
+
+</ScrollView>

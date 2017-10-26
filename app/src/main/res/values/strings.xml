@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Check Location</string>
+    <string name="title_activity_maps">ShareLocation</string>
+    <string name="email">gjundat95@gmail.com</string>
+    <string name="content">This is content</string>
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="subject_name">Tiêu Đề</string>
+    <string name="price">Địa Chỉ</string>
+    <string name="subject_description">Thông tin chi tiết</string>
+    <string name="phone_number">Số điện thoại</string>
+    <string name="facebook">Facebook Name</string>
+
+    <!--Facebook SDK-->
+    <string name="facebook_app_id">1745358025723651</string>
+    <string name="fb_login_protocol_scheme">1745358025723651</string>
+    <string name="origin">Origin</string>
+    <string name="lorem">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</string>
+</resources>
